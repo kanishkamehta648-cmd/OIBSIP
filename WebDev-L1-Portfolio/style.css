@@ -1,0 +1,397 @@
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* General page styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0b0f14;
+    color: #f5f5f5;
+}
+
+
+/* Navigation */
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    background-color: #0b0f14;
+
+    padding: 20px;
+
+    text-align: center;
+}
+
+
+nav a {
+    color: #f5f5f5;
+
+    text-decoration: none;
+
+    margin: 0 15px;
+}
+
+
+/* General section styling */
+section {
+    padding: 100px 8%;
+}
+
+
+/* Hero Section */
+.hero {
+    min-height: 80vh;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 50px;
+}
+
+
+.hero-content {
+    max-width: 650px;
+}
+
+
+/* Small introduction text */
+.intro {
+    font-size: 14px;
+
+    letter-spacing: 3px;
+}
+
+
+/* Main name */
+.hero h1 {
+    font-size: 72px;
+
+    margin: 15px 0;
+}
+
+
+/* Role */
+.hero h2 {
+    font-size: 28px;
+
+    font-weight: normal;
+}
+
+
+/* Hero description */
+.hero-content > p {
+    font-size: 18px;
+
+    line-height: 1.6;
+}
+
+
+/* Avatar */
+.profile-image {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+
+.avatar {
+    width: 220px;
+    height: 220px;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background-color: #1f2937;
+
+    border: 2px solid #38bdf8;
+
+    font-size: 48px;
+
+    font-weight: bold;
+}
+
+
+/* Hero button */
+.button {
+    display: inline-block;
+
+    margin-top: 20px;
+
+    padding: 14px 28px;
+
+    background-color: #38bdf8;
+
+    color: #0b0f14;
+
+    text-decoration: none;
+
+    border-radius: 6px;
+
+    font-weight: bold;
+}
+
+
+/* Section labels */
+.section-label {
+    font-size: 13px;
+
+    letter-spacing: 3px;
+
+    color: #38bdf8;
+}
+
+
+/* Section headings */
+section h2 {
+    font-size: 42px;
+
+    margin-top: 10px;
+}
+
+
+/* About section */
+#about p:not(.section-label) {
+    max-width: 750px;
+
+    line-height: 1.8;
+
+    font-size: 18px;
+}
+
+
+/* Skills grid */
+.skills-container {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+
+/* Individual skill card */
+.skill {
+    padding: 25px;
+
+    background-color: #111827;
+
+    border: 1px solid #1f2937;
+
+    border-radius: 10px;
+}
+
+
+.skill h3 {
+    font-size: 22px;
+}
+
+
+.skill p {
+    line-height: 1.6;
+}
+
+
+/* Projects grid */
+.projects-container {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 25px;
+}
+
+
+/* Individual project card */
+.project-card {
+    padding: 30px;
+
+    background-color: #111827;
+
+    border: 1px solid #1f2937;
+
+    border-radius: 12px;
+}
+
+
+/* Project number */
+.project-number {
+    color: #38bdf8;
+
+    font-size: 14px;
+}
+
+
+/* Project title */
+.project-card h3 {
+    font-size: 30px;
+
+    margin-bottom: 5px;
+}
+
+
+/* Project status */
+.project-status {
+    font-size: 12px;
+
+    letter-spacing: 2px;
+
+    color: #38bdf8;
+}
+
+
+/* Project description */
+.project-card > p {
+    line-height: 1.7;
+}
+
+
+/* Technology tags */
+.project-tech {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    margin: 20px 0;
+}
+
+
+.project-tech span {
+    padding: 6px 10px;
+
+    background-color: #1f2937;
+
+    border-radius: 20px;
+
+    font-size: 13px;
+}
+
+
+/* Project link */
+.project-link {
+    color: #38bdf8;
+
+    text-decoration: none;
+}
+
+
+/* Contact section */
+#contact {
+    text-align: center;
+}
+
+
+#contact > p {
+    line-height: 1.6;
+}
+
+
+#contact a {
+    color: #38bdf8;
+}
+
+
+/* Contact links */
+.contact-links {
+    margin-top: 25px;
+}
+
+
+.contact-links a {
+    margin: 0 10px;
+
+    text-decoration: none;
+}
+
+
+/* Footer */
+footer {
+    padding: 30px 20px;
+
+    text-align: center;
+
+    border-top: 1px solid #1f2937;
+
+    color: #9ca3af;
+}
+
+
+/* Mobile responsive design */
+@media (max-width: 768px) {
+
+    /* Navigation */
+    nav a {
+        display: inline-block;
+
+        margin: 5px 8px;
+    }
+
+
+    /* Sections */
+    section {
+        padding: 70px 20px;
+    }
+
+
+    /* Hero */
+    .hero {
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+
+    /* Hero name */
+    .hero h1 {
+        font-size: 48px;
+    }
+
+
+    /* Hero role */
+    .hero h2 {
+        font-size: 22px;
+    }
+
+
+    /* Avatar */
+    .avatar {
+        width: 170px;
+        height: 170px;
+
+        font-size: 38px;
+    }
+
+
+    /* Skills */
+    .skills-container {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* Projects */
+    .projects-container {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* Section headings */
+    section h2 {
+        font-size: 34px;
+    }
+
+}
